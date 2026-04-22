@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/storybook',
   ],
+  css: ['~/assets/css/globals.css'],
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
   i18n: {
