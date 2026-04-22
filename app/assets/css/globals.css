@@ -1,5 +1,6 @@
 :root {
   --site-max-width: 1440px;
+  --section-max-width: 40em;
   --section-padding-x: 20px;
   --paragraph-max-width: 40em;
 }
