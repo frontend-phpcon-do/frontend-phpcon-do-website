@@ -12,7 +12,7 @@
 }
 
 .section-container__inner {
-  max-width: var(--section-max-width);
+  max-width: var(--site-max-width);
   margin-inline: auto;
   padding-inline: var(--section-padding-x);
   display: grid;
