@@ -23,5 +23,9 @@
   },
   "footer": {
     "copyright": "© 2026 Frontend PHP Conference Hokkaido"
+  },
+  "overview": {
+    "heading": "Overview",
+    "description": "Frontend PHP Conference Hokkaido 2026 is a web frontend and PHP conference primarily for web frontend and PHP developers, welcoming software engineers from Hokkaido, across Japan, and around the world."
   }
 }
