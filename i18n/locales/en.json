@@ -1,5 +1,27 @@
 {
-  "access": "Access",
-  "news": "News",
-  "coc": "CoC"
+  "site": {
+    "name": "Frontend PHP Conference Hokkaido 2026",
+    "date": "TBD",
+    "venue": "TBD"
+  },
+  "nav": {
+    "overview": "Overview",
+    "access": "Access",
+    "sponsors": "Sponsors",
+    "staff": "Staff",
+    "jobBoard": "Job Board",
+    "timetable": "Timetable",
+    "blog": "Staff Blog",
+    "news": "News"
+  },
+  "cta": {
+    "buyTicket": "Buy Ticket"
+  },
+  "legal": {
+    "coc": "Code of Conduct",
+    "privacy": "Privacy Policy"
+  },
+  "footer": {
+    "copyright": "© 2026 Frontend PHP Conference Hokkaido"
+  }
 }

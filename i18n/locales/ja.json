@@ -1,5 +1,27 @@
 {
-  "access": "アクセス",
-  "news": "お知らせ",
-  "coc": "行動規範"
+  "site": {
+    "name": "Frontend PHP Conference Hokkaido 2026",
+    "date": "TBD",
+    "venue": "TBD"
+  },
+  "nav": {
+    "overview": "開催概要",
+    "access": "会場アクセス",
+    "sponsors": "スポンサー",
+    "staff": "スタッフ",
+    "jobBoard": "ジョブボード",
+    "timetable": "タイムテーブル",
+    "blog": "スタッフブログ",
+    "news": "お知らせ"
+  },
+  "cta": {
+    "buyTicket": "チケット購入"
+  },
+  "legal": {
+    "coc": "行動規範",
+    "privacy": "プライバシーポリシー"
+  },
+  "footer": {
+    "copyright": "© 2026 Frontend PHP Conference Hokkaido"
+  }
 }
