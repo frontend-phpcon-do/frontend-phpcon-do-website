@@ -1,7 +1,5 @@
 <template>
-  <SectionContainer>
-    <h1>{{ $t('site.name') }}</h1>
-  </SectionContainer>
+  <HeroSection />
 
   <SectionContainer id="overview">
     <h2>{{ $t('overview.heading') }}</h2>
