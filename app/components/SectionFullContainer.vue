@@ -7,5 +7,7 @@
 <style scoped>
 .section-full-container {
   width: 100%;
+  display: grid;
+  justify-items: center;
 }
 </style>

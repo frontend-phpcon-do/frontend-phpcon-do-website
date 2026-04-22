@@ -15,5 +15,7 @@
   max-width: var(--site-max-width);
   margin-inline: auto;
   padding-inline: var(--section-padding-x);
+  display: grid;
+  justify-items: center;
 }
 </style>
