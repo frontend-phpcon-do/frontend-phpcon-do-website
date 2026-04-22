@@ -1,5 +1,5 @@
 <template>
   <SectionContainer>
-    <h1>PHP Conference Dominican Republic</h1>
+    <h1>{{ $t('site.name') }}</h1>
   </SectionContainer>
 </template>
