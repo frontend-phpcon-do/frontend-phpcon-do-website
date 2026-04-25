@@ -30,6 +30,7 @@
     "@nuxtjs/storybook": "9.0.1",
     "@storybook-vue/nuxt": "^9.0.1",
     "better-sqlite3": "^12.6.2",
+    "motion-v": "^2.2.1",
     "nuxt": "^4.4.2",
     "storybook": "^10.2.19"
   },

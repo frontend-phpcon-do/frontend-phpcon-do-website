@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/sitemap",
     "@nuxtjs/storybook",
+    "motion-v/nuxt",
   ],
   app: {
     head: {
