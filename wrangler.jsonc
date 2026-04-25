@@ -1,0 +1,30 @@
+/**
+ * Cloudflare Workers configuration for Nuxt (cloudflare_module preset).
+ *
+ * - `main` / `assets.directory` は Nuxt のビルド成果物 (.output) を指す
+ * - `nodejs_compat` フラグは @nuxt/content など Node API 依存モジュールに必須
+ * - D1 binding は `pnpm wrangler d1 create <name>` で作成し、`database_id` を埋める
+ *
+ * Docs: https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "frontend-phpcon-do-website",
+  "main": "./.output/server/index.mjs",
+  "compatibility_date": "2024-09-19",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./.output/public/",
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "frontend-phpcon-do-website",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+    },
+  ],
+}

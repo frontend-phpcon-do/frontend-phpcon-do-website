@@ -6,6 +6,11 @@
 .cache
 dist
 
+# Cloudflare Wrangler
+.wrangler
+.dev.vars
+worker-configuration.d.ts
+
 # Node dependencies
 node_modules
 

@@ -15,7 +15,20 @@ export default defineNuxtConfig({
   ],
   css: ["~/assets/css/globals.css"],
   devtools: { enabled: true },
-  compatibilityDate: "2024-04-03",
+  compatibilityDate: "2024-09-19",
+  nitro: {
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: false,
+      nodeCompat: true,
+    },
+  },
+  content: {
+    database: {
+      type: "d1",
+      bindingName: "DB",
+    },
+  },
   i18n: {
     defaultLocale: "ja",
     locales: [
