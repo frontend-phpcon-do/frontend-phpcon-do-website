@@ -13,6 +13,11 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "@nuxtjs/storybook",
   ],
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/png", href: "/icon.png" }],
+    },
+  },
   css: ["~/assets/css/globals.css"],
   devtools: { enabled: true },
   compatibilityDate: "2024-09-19",

@@ -1,13 +1,14 @@
 <template>
   <SectionContainer class="hero-section">
+    <img class="hero-section__visual" src="/key-visual.svg" alt="" width="1200" height="630" />
     <h1 class="hero-section__title">
-      {{ $t('site.name') }}
+      {{ $t("site.name") }}
     </h1>
     <p class="hero-section__date">
-      <time datetime="2026-06-06T10:40">{{ $t('site.date') }}</time>
+      <time datetime="2026-06-06T10:40">{{ $t("site.date") }}</time>
     </p>
     <p class="hero-section__venue">
-      {{ $t('site.venue') }}
+      {{ $t("site.venue") }}
     </p>
   </SectionContainer>
 </template>
@@ -15,6 +16,13 @@
 <style scoped>
 .hero-section {
   padding-block: 80px;
+}
+
+.hero-section__visual {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 32px;
 }
 
 .hero-section__title {
