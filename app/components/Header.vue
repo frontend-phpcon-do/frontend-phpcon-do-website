@@ -1,35 +1,34 @@
 <script setup lang="ts">
-const localePath = useLocalePath()
+import { SITE_LINKS } from "../constants";
+
+const localePath = useLocalePath();
 </script>
 
 <template>
   <header class="site-header">
     <div class="site-header__inner">
-      <NuxtLink
-        :to="localePath('/')"
-        class="site-header__logo"
-      >
-        {{ $t('site.name') }}
-      </NuxtLink>
+      <NuxtLink :to="localePath('/')" class="site-header__logo"> #frontend_phpcon_do </NuxtLink>
 
-      <nav
-        class="site-header__nav"
-        aria-label="primary"
-      >
+      <nav class="site-header__nav" aria-label="primary">
         <ul class="site-header__nav-list">
-          <li><a href="#overview">{{ $t('nav.overview') }}</a></li>
-          <li><a href="#access">{{ $t('nav.access') }}</a></li>
-          <li><a href="#sponsors">{{ $t('nav.sponsors') }}</a></li>
-          <li><a href="#staff">{{ $t('nav.staff') }}</a></li>
+          <li>
+            <a href="#overview">{{ $t("nav.overview") }}</a>
+          </li>
+          <li>
+            <a href="#access">{{ $t("nav.access") }}</a>
+          </li>
+          <li>
+            <a href="#sponsors">{{ $t("nav.sponsors") }}</a>
+          </li>
+          <li>
+            <a href="#staff">{{ $t("nav.staff") }}</a>
+          </li>
         </ul>
       </nav>
 
       <div class="site-header__actions">
-        <a
-          href="#"
-          class="site-header__cta"
-        >
-          {{ $t('cta.buyTicket') }}
+        <a :href="SITE_LINKS.buyTicket" class="site-header__cta" target="_blank" rel="noopener">
+          {{ $t("cta.buyTicket") }}
         </a>
         <LangSwitcher />
       </div>

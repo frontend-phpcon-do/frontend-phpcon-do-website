@@ -1,44 +1,55 @@
 <script setup lang="ts">
-const localePath = useLocalePath()
+import { SITE_LINKS } from "../constants";
+
+const localePath = useLocalePath();
 </script>
 
 <template>
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <nav
-        class="site-footer__nav"
-        aria-label="secondary"
-      >
+      <nav class="site-footer__nav" aria-label="secondary">
         <ul class="site-footer__nav-list">
-          <li><a href="#overview">{{ $t('nav.overview') }}</a></li>
-          <li><a href="#access">{{ $t('nav.access') }}</a></li>
-          <li><a href="#sponsors">{{ $t('nav.sponsors') }}</a></li>
-          <li><a href="#staff">{{ $t('nav.staff') }}</a></li>
+          <li>
+            <a href="#overview">{{ $t("nav.overview") }}</a>
+          </li>
+          <li>
+            <a href="#access">{{ $t("nav.access") }}</a>
+          </li>
+          <li>
+            <a href="#sponsors">{{ $t("nav.sponsors") }}</a>
+          </li>
+          <li>
+            <a href="#staff">{{ $t("nav.staff") }}</a>
+          </li>
           <li>
             <NuxtLink :to="localePath('/job-board')">
-              {{ $t('nav.jobBoard') }}
+              {{ $t("nav.jobBoard") }}
             </NuxtLink>
           </li>
-          <li><a href="#timetable">{{ $t('nav.timetable') }}</a></li>
-          <li><a href="#blog">{{ $t('nav.blog') }}</a></li>
+          <li>
+            <a href="#timetable">{{ $t("nav.timetable") }}</a>
+          </li>
+          <li>
+            <a href="#blog">{{ $t("nav.blog") }}</a>
+          </li>
         </ul>
       </nav>
 
       <ul class="site-footer__legal">
         <li>
-          <NuxtLink :to="localePath('/code-of-conduct')">
-            {{ $t('legal.coc') }}
-          </NuxtLink>
+          <a :href="SITE_LINKS.codeOfConduct" target="_blank" rel="noopener">
+            {{ $t("legal.coc") }}
+          </a>
         </li>
         <li>
-          <NuxtLink :to="localePath('/privacy')">
-            {{ $t('legal.privacy') }}
-          </NuxtLink>
+          <a :href="SITE_LINKS.privacyPolicy" target="_blank" rel="noopener">
+            {{ $t("legal.privacy") }}
+          </a>
         </li>
       </ul>
 
       <p class="site-footer__copyright">
-        {{ $t('footer.copyright') }}
+        {{ $t("footer.copyright") }}
       </p>
     </div>
   </footer>
