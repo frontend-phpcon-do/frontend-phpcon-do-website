@@ -2,6 +2,8 @@
   --site-max-width: 1440px;
   --section-padding-x: 20px;
   --paragraph-max-width: 40em;
+  --theme-pink: #ff5cb9;
+  --theme-blue: #0b94e3;
 }
 
 p {

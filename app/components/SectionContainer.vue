@@ -9,6 +9,7 @@
 <style scoped>
 .section-container {
   width: 100%;
+  padding-block: 48px;
 }
 
 .section-container__inner {
