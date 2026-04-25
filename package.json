@@ -7,11 +7,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "test": "vitest",
-    "test:watch": "vitest --watch",
-    "test:unit": "vitest --project unit",
-    "test:nuxt": "vitest --project nuxt",
-    "test:e2e": "vitest --project e2e"
+    "test": "vp test",
+    "test:watch": "vp test --watch",
+    "test:unit": "vp test --project unit",
+    "test:nuxt": "vp test --project nuxt",
+    "test:e2e": "vp test --project e2e",
+    "prepare": "vp config"
   },
   "dependencies": {
     "@nuxt/a11y": "1.0.0-alpha.1",
@@ -30,9 +31,12 @@
     "nuxt": "^4.4.2",
     "storybook": "^10.2.19"
   },
-  "packageManager": "pnpm@10.31.0+sha512.e3927388bfaa8078ceb79b748ffc1e8274e84d75163e67bc22e06c0d3aed43dd153151cbf11d7f8301ff4acb98c68bdc5cadf6989532801ffafe3b3e4a63c268",
   "devDependencies": {
+    "@types/node": "^25.6.0",
     "@vue/test-utils": "^2.4.6",
-    "vitest": "^4.1.0"
-  }
+    "rolldown": "1.0.0-rc.17",
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
+  },
+  "packageManager": "pnpm@10.31.0+sha512.e3927388bfaa8078ceb79b748ffc1e8274e84d75163e67bc22e06c0d3aed43dd153151cbf11d7f8301ff4acb98c68bdc5cadf6989532801ffafe3b3e4a63c268"
 }

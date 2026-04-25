@@ -1,31 +1,31 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/content',
-    '@nuxt/a11y',
-    '@nuxt/fonts',
-    '@nuxt/icon',
-    '@nuxt/scripts',
-    '@nuxt/test-utils',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/device',
-    '@nuxtjs/i18n',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/storybook',
+    "@nuxt/content",
+    "@nuxt/a11y",
+    "@nuxt/fonts",
+    "@nuxt/icon",
+    "@nuxt/scripts",
+    "@nuxt/test-utils",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/device",
+    "@nuxtjs/i18n",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/storybook",
   ],
-  css: ['~/assets/css/globals.css'],
+  css: ["~/assets/css/globals.css"],
   devtools: { enabled: true },
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: "2024-04-03",
   i18n: {
-    defaultLocale: 'ja',
+    defaultLocale: "ja",
     locales: [
-      { code: 'ja', name: '日本語', file: 'ja.json' },
-      { code: 'en', name: 'English', file: 'en.json' }
-    ]
+      { code: "ja", name: "日本語", file: "ja.json" },
+      { code: "en", name: "English", file: "en.json" },
+    ],
   },
   storybook: {
-    url: 'http://localhost:6006',
-    storybookRoute: '/.storybook',
+    host: "http://localhost",
+    route: "/.storybook",
     port: 6006,
   },
-})
+});
