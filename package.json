@@ -9,12 +9,8 @@
     "preview": "wrangler dev",
     "deploy": "nuxt build && wrangler deploy",
     "cf-typegen": "wrangler types",
-    "test": "vp test",
-    "test:watch": "vp test --watch",
-    "test:unit": "vp test --project unit",
-    "test:nuxt": "vp test --project nuxt",
-    "test:e2e": "vp test --project e2e",
-    "prepare": "vp config"
+    "fmt": "vp fmt .",
+    "lint": "vp lint"
   },
   "dependencies": {
     "@nuxt/a11y": "1.0.0-alpha.1",
@@ -35,9 +31,13 @@
     "storybook": "^10.2.19"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^25.6.0",
     "@vue/test-utils": "^2.4.6",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.9.0",
     "rolldown": "1.0.0-rc.17",
+    "typescript-eslint": "^8.59.0",
     "vite-plus": "catalog:",
     "vitest": "catalog:",
     "wrangler": "^4.85.0"
