@@ -20,6 +20,12 @@
   "observability": {
     "enabled": true,
   },
+  "routes": [
+    {
+      "pattern": "frontend-php-con.hokkaido.jp",
+      "custom_domain": true,
+    },
+  ],
   "d1_databases": [
     {
       "binding": "DB",
