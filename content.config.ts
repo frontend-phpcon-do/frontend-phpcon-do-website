@@ -2,6 +2,7 @@ import { defineContentConfig, defineCollection, z } from "@nuxt/content";
 
 const pageSchema = z.object({
   date: z.string().optional(),
+  author: z.string().optional(),
 });
 
 export default defineContentConfig({

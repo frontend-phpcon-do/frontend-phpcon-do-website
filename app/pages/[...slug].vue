@@ -30,9 +30,10 @@ if (!page.value) {
   <article v-if="page" class="content-article">
     <header class="content-article__header">
       <h1 class="content-article__title">{{ page.title }}</h1>
-      <time v-if="page.date" class="content-article__date" :datetime="page.date">
-        {{ page.date }}
-      </time>
+      <p v-if="page.date || page.author" class="content-article__meta">
+        <time v-if="page.date" :datetime="page.date">{{ page.date }}</time>
+        <span v-if="page.author" class="content-article__author">{{ page.author }}</span>
+      </p>
     </header>
     <ContentRenderer :value="page" />
   </article>
@@ -52,10 +53,16 @@ if (!page.value) {
   margin: 0;
 }
 
-.content-article__date {
-  display: block;
-  margin-top: 8px;
+.content-article__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 0;
   color: #666;
   font-size: 0.875rem;
+}
+
+.content-article__author::before {
+  content: "by ";
 }
 </style>
