@@ -104,6 +104,12 @@ export default defineConfig({
     },
     overrides: [
       {
+        files: ["**/*.vue"],
+        rules: {
+          "no-undef": "off",
+        },
+      },
+      {
         files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
         rules: {
           "constructor-super": "off",
