@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/i18n",
     "@nuxtjs/sitemap",
-    "@nuxtjs/storybook",
     "motion-v/nuxt",
   ],
   app: {
@@ -41,10 +40,5 @@ export default defineNuxtConfig({
       { code: "ja", name: "日本語", file: "ja.json" },
       { code: "en", name: "English", file: "en.json" },
     ],
-  },
-  storybook: {
-    host: "http://localhost",
-    route: "/.storybook",
-    port: 6006,
   },
 });
