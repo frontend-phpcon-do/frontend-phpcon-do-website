@@ -1,7 +1,13 @@
 <script setup lang="ts">
 const { t } = useI18n();
-useHead({
-  title: () => `${t("jobBoard.heading")} | ${t("site.name")}`,
+
+useSeoMeta({
+  title: () => t("jobBoard.heading"),
+  ogTitle: () => t("jobBoard.heading"),
+  twitterTitle: () => t("jobBoard.heading"),
+  description: () => t("jobBoard.description"),
+  ogDescription: () => t("jobBoard.description"),
+  twitterDescription: () => t("jobBoard.description"),
 });
 </script>
 

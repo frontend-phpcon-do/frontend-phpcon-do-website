@@ -21,6 +21,10 @@ export default defineNuxtConfig({
   css: ["~/assets/css/globals.css"],
   devtools: { enabled: true },
   compatibilityDate: "2024-09-19",
+  site: {
+    url: "https://frontend-php-con.hokkaido.jp",
+    name: "Frontend PHP Conference Hokkaido 2026",
+  },
   nitro: {
     preset: "cloudflare_module",
     cloudflare: {

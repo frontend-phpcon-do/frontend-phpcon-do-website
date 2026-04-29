@@ -1,3 +1,16 @@
+<script setup lang="ts">
+const { t } = useI18n();
+
+useSeoMeta({
+  title: () => t("site.name"),
+  ogTitle: () => t("site.name"),
+  twitterTitle: () => t("site.name"),
+  description: () => t("site.description"),
+  ogDescription: () => t("site.description"),
+  twitterDescription: () => t("site.description"),
+});
+</script>
+
 <template>
   <HeroSection />
 

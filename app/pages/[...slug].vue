@@ -24,6 +24,45 @@ const { data: page } = await useAsyncData(
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: "Page not found", fatal: true });
 }
+
+const articleDescription = computed(() => {
+  const p = page.value;
+  if (!p) return undefined;
+  return (
+    (p.description as string | undefined) ??
+    (typeof p.body === "object" && p.body && "value" in p.body
+      ? extractFirstParagraph(p.body as { value?: unknown })
+      : undefined)
+  );
+});
+
+function extractFirstParagraph(body: { value?: unknown }): string | undefined {
+  const value = body.value;
+  if (!Array.isArray(value)) return undefined;
+  for (const node of value) {
+    if (Array.isArray(node) && node[0] === "p") {
+      const texts = node.slice(2).filter((n): n is string => typeof n === "string");
+      const joined = texts.join("").trim();
+      if (joined) return joined.slice(0, 200);
+    }
+  }
+  return undefined;
+}
+
+useSeoMeta({
+  title: () => page.value?.title,
+  ogTitle: () => page.value?.title,
+  twitterTitle: () => page.value?.title,
+  description: () => articleDescription.value,
+  ogDescription: () => articleDescription.value,
+  twitterDescription: () => articleDescription.value,
+  ogType: "article",
+  articlePublishedTime: () => page.value?.date as string | undefined,
+  articleAuthor: () => {
+    const a = page.value?.author;
+    return a ? [a as string] : undefined;
+  },
+});
 </script>
 
 <template>

@@ -2,7 +2,9 @@
   "site": {
     "name": "Frontend PHP Conference Hokkaido 2026",
     "date": "2026/6/6 (Sat.) 10:40–18:45",
-    "venue": "Sapporo Convention Center"
+    "venue": "Sapporo Convention Center",
+    "tagline": "A joint frontend & PHP tech conference, hosted in Hokkaido.",
+    "description": "Frontend PHP Conference Hokkaido 2026 is a joint tech conference for frontend and PHP developers, held on June 6, 2026 at Sapporo Convention Center."
   },
   "nav": {
     "overview": "Overview",
