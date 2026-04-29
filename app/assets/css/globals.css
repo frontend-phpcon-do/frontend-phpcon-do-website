@@ -1,11 +1,163 @@
+/* =========================================================
+ * Frontend PHP Conference Hokkaido 2026 — Pop / Tech / Simple
+ * Theme colors (--theme-pink / --theme-blue) are intentionally
+ * preserved. Everything else is a neutral support system that
+ * lets those two colors stay sharp and loud.
+ * ========================================================= */
+
 :root {
-  --site-max-width: 1440px;
-  --section-padding-x: 20px;
-  --paragraph-max-width: 40em;
+  /* Layout */
+  --site-max-width: 1280px;
+  --section-padding-x: clamp(20px, 5vw, 56px);
+  --paragraph-max-width: 38em;
+
+  /* Theme (do not change) */
   --theme-pink: #ff5cb9;
   --theme-blue: #0b94e3;
+
+  /* Neutrals — warm, paper-like, grounded */
+  --color-paper: #fbfaf5;
+  --color-soft: #f1eee2;
+  --color-ink: #0e0e1a;
+  --color-mute: #6a6a78;
+  --color-line: #1a1a26;
+  --color-hairline: rgba(14, 14, 26, 0.12);
+  --color-dot: rgba(14, 14, 26, 0.18);
+
+  /* Typography */
+  --font-display:
+    "Bricolage Grotesque", "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --font-body:
+    "Plus Jakarta Sans", "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Motion & shape */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-pop: 6px 6px 0 0 var(--color-line);
+  --shadow-soft: 0 14px 40px -18px rgba(14, 14, 26, 0.25);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  background-image:
+    radial-gradient(var(--color-dot) 1px, transparent 1px),
+    radial-gradient(var(--color-dot) 1px, transparent 1px);
+  background-size:
+    32px 32px,
+    32px 32px;
+  background-position:
+    0 0,
+    16px 16px;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--theme-pink);
+  color: #fff;
 }
 
 p {
   max-width: var(--paragraph-max-width);
+  margin-block: 0 1em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(2rem, 4.4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.4vw, 1.75rem);
+  letter-spacing: -0.01em;
+}
+
+/* Reusable atoms ------------------------------------------- */
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+}
+
+.eyebrow::before {
+  content: "//";
+  color: var(--theme-pink);
+  font-weight: 700;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  padding: 8px 14px;
+  background: var(--color-soft);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-hairline);
+}
+
+.section-label__index {
+  color: var(--theme-blue);
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

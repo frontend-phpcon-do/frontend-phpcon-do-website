@@ -31,5 +31,29 @@
   "news": {
     "heading": "News",
     "empty": "No news yet."
+  },
+  "sponsors": {
+    "heading": "Sponsors",
+    "description": "We will introduce the sponsors supporting Frontend PHP Conference Hokkaido 2026 here.",
+    "caption": "// COMING SOON",
+    "note": "Sponsor program is being prepared. This board will be updated as soon as we have details."
+  },
+  "staff": {
+    "heading": "Staff",
+    "description": "This conference is organized and run by a team of volunteer staff.",
+    "caption": "// CREDITS",
+    "note": "Staff page is in progress. Core member introductions will be published soon."
+  },
+  "timetable": {
+    "heading": "Timetable",
+    "description": "The session list and venue map will be published after proposals are selected.",
+    "caption": "// SCHEDULE",
+    "note": "Session slots are being arranged. Updates will be posted on News and our official X."
+  },
+  "jobBoard": {
+    "heading": "Job Board",
+    "description": "We are preparing a job board to feature openings from our sponsor companies; it will also be displayed at the venue.",
+    "caption": "// HIRING",
+    "note": "Details for sponsors interested in posting openings will be announced soon."
   }
 }
