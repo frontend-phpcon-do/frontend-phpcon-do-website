@@ -19,6 +19,8 @@ useSeoMeta({
     <p>{{ $t("overview.description") }}</p>
   </SectionContainer>
 
+  <AccessSection />
+
   <NewsSection />
 
   <SponsorsSection />

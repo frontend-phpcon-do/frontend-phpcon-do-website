@@ -27,7 +27,7 @@ const toRoute = (postPath: string): string => {
 </script>
 
 <template>
-  <SectionContainer id="news" index="02" label="News">
+  <SectionContainer id="news" index="03" label="News">
     <h2>{{ $t("news.heading") }}</h2>
 
     <ul v-if="posts && posts.length" class="news__list">

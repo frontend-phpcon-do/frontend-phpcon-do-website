@@ -30,6 +30,22 @@
     "heading": "Overview",
     "description": "Frontend PHP Conference Hokkaido 2026 is a web frontend and PHP conference primarily for web frontend and PHP developers, welcoming software engineers from Hokkaido, across Japan, and around the world."
   },
+  "access": {
+    "heading": "Access",
+    "description": "The venue is Sapporo Convention Center, easily reachable from central Sapporo.",
+    "venueName": "Sapporo Convention Center",
+    "address": "1-1, Higashi-Sapporo 6-jo 1-chome, Shiroishi-ku, Sapporo, Hokkaido 003-0006",
+    "station": {
+      "label": "Nearest Station",
+      "value": "8 min walk from Higashi-Sapporo Station (Municipal Subway Tozai Line)"
+    },
+    "airport": {
+      "label": "From New Chitose Airport",
+      "value": "Take JR to Shin-Sapporo Station\nTransfer to the Tozai Subway Line and ride to Higashi-Sapporo Station"
+    },
+    "openMap": "Open in Google Maps",
+    "venueSite": "Venue Website"
+  },
   "news": {
     "heading": "News",
     "empty": "No news yet."
