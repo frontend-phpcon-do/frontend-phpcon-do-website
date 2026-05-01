@@ -71,6 +71,7 @@ const activeIndex = computed(() => items.value.findIndex((i) => i.code === local
   appearance: none;
   background: none;
   border: none;
+  width: calc((100% - var(--lang-toggle-pad) * 2) / var(--lang-toggle-count));
   cursor: pointer;
   padding: 5px 12px;
   min-width: 36px;
