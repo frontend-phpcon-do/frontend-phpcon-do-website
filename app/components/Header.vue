@@ -7,17 +7,19 @@ const localePath = useLocalePath();
 const isOpen = ref(false);
 
 type NavItem =
-  | { kind: "anchor"; href: string; key: string }
+  | { kind: "anchor"; hash: string; key: string }
   | { kind: "page"; to: string; key: string };
 
 const navItems: readonly NavItem[] = [
-  { kind: "anchor", href: "/#overview", key: "nav.overview" },
-  { kind: "anchor", href: "/#access", key: "nav.access" },
-  { kind: "anchor", href: "/#sponsors", key: "nav.sponsors" },
-  { kind: "anchor", href: "/#staff", key: "nav.staff" },
+  { kind: "anchor", hash: "#overview", key: "nav.overview" },
+  { kind: "anchor", hash: "#access", key: "nav.access" },
+  { kind: "anchor", hash: "#sponsors", key: "nav.sponsors" },
+  { kind: "anchor", hash: "#staff", key: "nav.staff" },
   { kind: "page", to: "/timetable", key: "nav.timetable" },
   { kind: "page", to: "/job-board", key: "nav.jobBoard" },
 ] as const;
+
+const homeHashTo = (hash: string) => ({ path: localePath("/"), hash });
 
 function close() {
   isOpen.value = false;
@@ -43,9 +45,9 @@ function close() {
             >
               {{ $t(item.key) }}
             </NuxtLink>
-            <a v-else :href="item.href" class="site-header__nav-link">
+            <NuxtLink v-else :to="homeHashTo(item.hash)" class="site-header__nav-link">
               {{ $t(item.key) }}
-            </a>
+            </NuxtLink>
           </li>
         </ul>
       </nav>
@@ -111,10 +113,15 @@ function close() {
               <span>{{ $t(item.key) }}</span>
               <span class="site-header__drawer-arrow" aria-hidden="true">→</span>
             </NuxtLink>
-            <a v-else :href="item.href" class="site-header__drawer-link" @click="close">
+            <NuxtLink
+              v-else
+              :to="homeHashTo(item.hash)"
+              class="site-header__drawer-link"
+              @click="close"
+            >
               <span>{{ $t(item.key) }}</span>
               <span class="site-header__drawer-arrow" aria-hidden="true">→</span>
-            </a>
+            </NuxtLink>
           </motion.li>
         </ul>
 

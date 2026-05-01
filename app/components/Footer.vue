@@ -4,13 +4,14 @@ import { SITE_LINKS } from "../constants";
 const localePath = useLocalePath();
 
 const navItems = [
-  { href: "#overview", key: "nav.overview" },
-  { href: "#access", key: "nav.access" },
-  { href: "#sponsors", key: "nav.sponsors" },
-  { href: "#staff", key: "nav.staff" },
-  { href: "#timetable", key: "nav.timetable" },
-  { href: "#blog", key: "nav.blog" },
+  { hash: "#overview", key: "nav.overview" },
+  { hash: "#access", key: "nav.access" },
+  { hash: "#sponsors", key: "nav.sponsors" },
+  { hash: "#staff", key: "nav.staff" },
+  { hash: "#timetable", key: "nav.timetable" },
 ] as const;
+
+const homeHashTo = (hash: string) => ({ path: localePath("/"), hash });
 </script>
 
 <template>
@@ -41,7 +42,7 @@ const navItems = [
           <p class="site-footer__col-label">// SITE</p>
           <ul>
             <li v-for="item in navItems" :key="item.key">
-              <a :href="item.href">{{ $t(item.key) }}</a>
+              <NuxtLink :to="homeHashTo(item.hash)">{{ $t(item.key) }}</NuxtLink>
             </li>
             <li>
               <NuxtLink :to="localePath('/job-board')">{{ $t("nav.jobBoard") }}</NuxtLink>

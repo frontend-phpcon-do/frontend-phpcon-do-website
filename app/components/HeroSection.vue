@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { SITE_LINKS } from "../constants";
+
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -48,10 +50,10 @@ import { SITE_LINKS } from "../constants";
           <span>{{ $t("cta.buyTicket") }}</span>
           <span class="hero__cta-arrow" aria-hidden="true">→</span>
         </a>
-        <a href="#overview" class="hero__secondary">
+        <NuxtLink :to="{ path: localePath('/'), hash: '#overview' }" class="hero__secondary">
           <span class="hero__secondary-dot" aria-hidden="true" />
           <span>{{ $t("nav.overview") }}</span>
-        </a>
+        </NuxtLink>
       </div>
 
       <div class="hero__visual" aria-hidden="true">
