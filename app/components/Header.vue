@@ -11,10 +11,10 @@ type NavItem =
   | { kind: "page"; to: string; key: string };
 
 const navItems: readonly NavItem[] = [
-  { kind: "anchor", href: "#overview", key: "nav.overview" },
-  { kind: "anchor", href: "#access", key: "nav.access" },
-  { kind: "anchor", href: "#sponsors", key: "nav.sponsors" },
-  { kind: "anchor", href: "#staff", key: "nav.staff" },
+  { kind: "anchor", href: "/#overview", key: "nav.overview" },
+  { kind: "anchor", href: "/#access", key: "nav.access" },
+  { kind: "anchor", href: "/#sponsors", key: "nav.sponsors" },
+  { kind: "anchor", href: "/#staff", key: "nav.staff" },
   { kind: "page", to: "/timetable", key: "nav.timetable" },
   { kind: "page", to: "/job-board", key: "nav.jobBoard" },
 ] as const;
