@@ -17,6 +17,10 @@ export default defineNuxtConfig({
     head: {
       link: [{ rel: "icon", type: "image/png", href: "/icon.png" }],
     },
+    pageTransition: {
+      name: "page",
+      mode: "out-in",
+    },
   },
   css: ["~/assets/css/globals.css"],
   devtools: { enabled: true },
