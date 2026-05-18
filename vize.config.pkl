@@ -1,0 +1,11 @@
+amends "node_modules/vize/pkl/vize.pkl"
+
+compiler {
+  sourceMap = true
+}
+
+vite {
+  scanPatterns = new Listing {
+    "app/**/*.vue"
+  }
+}

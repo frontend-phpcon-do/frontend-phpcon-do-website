@@ -6,13 +6,16 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/icon",
     "@nuxt/scripts",
-    "@nuxt/test-utils",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
     "@nuxtjs/i18n",
     "@nuxtjs/sitemap",
     "motion-v/nuxt",
+    "@vizejs/nuxt",
   ],
+  vize: {
+    compiler: true,
+  },
   app: {
     head: {
       link: [{ rel: "icon", type: "image/png", href: "/icon.png" }],
