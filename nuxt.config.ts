@@ -49,4 +49,9 @@ export default defineNuxtConfig({
       { code: "en", name: "English", file: "en.json" },
     ],
   },
+  runtimeConfig: {
+    public: {
+      apiBase: "https://fortee.jp/frontend-phpcon-do-2026/api",
+    },
+  },
 });
