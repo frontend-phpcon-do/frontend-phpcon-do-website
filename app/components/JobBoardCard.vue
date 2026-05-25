@@ -59,34 +59,32 @@ a.job-card:hover {
 }
 
 .job-card__logo {
-  display: block;
+  position: relative;
   width: 100%;
   aspect-ratio: 3 / 2;
-  padding: 12px;
   background: #fff;
   border-radius: 4px;
   overflow: hidden;
-  box-sizing: border-box;
 }
 
-.job-card__logo img {
-  width: 100%;
-  height: 100%;
+.job-card__logo img,
+.job-card__logo-fallback {
+  position: absolute;
+  inset: 12px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
   object-fit: contain;
 }
 
 .job-card__logo-fallback {
   display: grid;
   place-items: center;
-  width: 100%;
-  height: 100%;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(0.95rem, 1.6vw, 1.15rem);
   line-height: 1.2;
   color: var(--color-mute);
   text-align: center;
-  padding: 0 8px;
 }
 
 .job-card__name {
