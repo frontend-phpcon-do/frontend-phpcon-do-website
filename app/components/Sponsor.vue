@@ -63,15 +63,33 @@ a.sponsor:hover {
 }
 
 .sponsor__logo {
-  display: block;
+  position: relative;
   width: var(--sponsor-logo-width, clamp(120px, 22vw, 200px));
   aspect-ratio: 3 / 2;
-  padding: 6px;
   background: #fff;
   border-radius: 4px;
   overflow: hidden;
   flex-shrink: 0;
-  box-sizing: border-box;
+}
+
+.sponsor__logo img,
+.sponsor__logo-fallback {
+  position: absolute;
+  inset: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  object-fit: contain;
+}
+
+.sponsor__logo-fallback {
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(0.85rem, 1.4vw, 1rem);
+  line-height: 1.2;
+  color: var(--color-mute);
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
@@ -84,32 +102,18 @@ a.sponsor:hover {
 
   .sponsor__logo {
     width: 100%;
-    padding: 12px;
+  }
+
+  .sponsor__logo img,
+  .sponsor__logo-fallback {
+    inset: 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
   }
 
   .sponsor__name {
     text-align: center;
   }
-}
-
-.sponsor__logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.sponsor__logo-fallback {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100%;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(0.85rem, 1.4vw, 1rem);
-  line-height: 1.2;
-  color: var(--color-mute);
-  text-align: center;
-  padding: 0 8px;
 }
 
 .sponsor__name {
