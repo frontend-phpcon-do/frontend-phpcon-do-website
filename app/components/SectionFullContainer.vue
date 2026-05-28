@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <section class="section-full-container">
     <slot />
