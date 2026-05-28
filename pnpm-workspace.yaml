@@ -1,9 +1,9 @@
 allowBuilds:
   better-sqlite3: true
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@^0.1.22
-  vite-plus: latest
+  vite: npm:@voidzero-dev/vite-plus-core@latest
   vitest: npm:@voidzero-dev/vite-plus-test@latest
+  vite-plus: latest
 overrides:
   vite: "catalog:"
   vitest: "catalog:"
