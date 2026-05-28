@@ -18,3 +18,5 @@ useSeoMeta({
     <TbdBoard :caption="$t('timetable.caption')" :note="$t('timetable.note')" tone="blue" />
   </SectionContainer>
 </template>
+
+<style scoped></style>

@@ -18,3 +18,5 @@ useSeoMeta({
     <TbdBoard :caption="$t('jobBoard.caption')" :note="$t('jobBoard.note')" tone="pink" />
   </SectionContainer>
 </template>
+
+<style scoped></style>

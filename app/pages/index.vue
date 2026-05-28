@@ -29,3 +29,5 @@ useSeoMeta({
     <StaffSection />
   </div>
 </template>
+
+<style scoped></style>
