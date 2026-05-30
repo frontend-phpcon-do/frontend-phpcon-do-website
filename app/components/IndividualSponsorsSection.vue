@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { individualSponsors } from "../data/individual-sponsors";
+
+const hasAvatarError = ref<Record<string, boolean>>({});
+const avatarSrc = (id: string) => `/individual-sponsors/${id}.png`;
 </script>
 
 <template>
@@ -10,15 +13,16 @@ import { individualSponsors } from "../data/individual-sponsors";
     <ul class="individual-sponsors__grid">
       <li
         v-for="sponsor in individualSponsors"
-        :key="sponsor.name"
+        :key="sponsor.key"
         class="individual-sponsors__item"
       >
         <div class="individual-sponsors__avatar">
           <img
-            v-if="sponsor.avatarUrl"
-            :src="sponsor.avatarUrl"
+            v-if="!hasAvatarError[sponsor.id]"
+            :src="avatarSrc(sponsor.id)"
             :alt="sponsor.name"
             loading="lazy"
+            @error="hasAvatarError[sponsor.id] = true"
           />
           <span v-else class="individual-sponsors__avatar-fallback" aria-hidden="true">
             {{ sponsor.name.charAt(0) }}

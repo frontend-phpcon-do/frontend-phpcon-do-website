@@ -1,13 +1,47 @@
 export type IndividualSponsor = {
+  key: string;
+  id: string;
   name: string;
-  avatarUrl?: string;
 };
 
-// 個人スポンサーのデータはここに追加してください。
-// avatarUrl を省略すると、イニシャルのフォールバックアバターが表示されます。
 export const individualSponsors: IndividualSponsor[] = [
-  {
-    name: "nobody",
-    avatarUrl: "https://fortee.jp/images/avatar-blank.png",
-  },
+  { key: "3bc29b07-9b98-441a-a86f-f754a1a91bca", id: "sanogemaru", name: "sanogemaru" },
+  { key: "b0d59c6a-2693-4363-9ed5-5337e4fb79bb", id: "okashoi", name: "okashoi" },
+  { key: "668e7ab3-a39a-4e18-83a8-9888a4f0d1c6", id: "satak", name: "satak" },
+  { key: "ec51872b-e18d-4468-a755-5e86acbafd85", id: "satak", name: "satak" },
+  { key: "1d0839b5-7fb4-48e7-b936-26692fca92cc", id: "koyhoge", name: "koyhoge" },
+  { key: "3d9a5224-1374-430b-bd17-d6a7b549893f", id: "KojiKa", name: "KojiKa" },
+  { key: "94013f9c-cc84-45df-ba34-0bf6a1a0a7c0", id: "Tamu6733", name: "Tamu6733" },
+  { key: "144437f8-0bac-4174-a496-5c479c83cf7e", id: "higaki", name: "higaki" },
+  { key: "a2a8c72f-9b0e-472f-b72f-222cb2724b92", id: "muno92", name: "muno92" },
+  { key: "dbd6dff6-d4cb-4a4c-a416-2f931334a361", id: "tacck", name: "tacck" },
+  { key: "74593051-2582-474c-afc4-7834ac836b3c", id: "avosalmon", name: "avosalmon" },
+  { key: "7a47f2e3-5aaa-48ed-915f-16db06ff0b47", id: "suguru-ohki", name: "suguru-ohki" },
+  { key: "1330de1f-f268-4374-a97e-7dc41a523bf4", id: "suguru-ohki", name: "suguru-ohki" },
+  { key: "b2529635-5d15-48a8-9ab0-3f0c0508f3d2", id: "suguru-ohki", name: "suguru-ohki" },
+  { key: "91f8e92d-dc26-4935-93fd-80610f06da65", id: "suguru-ohki", name: "suguru-ohki" },
+  { key: "3b7f2ab1-8e64-48c2-ab5a-92f244d54f01", id: "o0h", name: "o0h" },
+  { key: "3af38bc5-4971-4dc9-9db0-0a641f287caf", id: "hamaco", name: "hamaco" },
+  { key: "2e0f6127-f56b-417f-a79b-b0c67a3d1e53", id: "MotokiHirao", name: "MotokiHirao" },
+  { key: "1c952e5a-48c5-485e-ba27-b14842fbd0d1", id: "yumu", name: "yumu" },
+  { key: "36801c1d-744a-4c8a-b060-563ac2855769", id: "fs0414", name: "fs0414" },
+  { key: "80215c0c-c0d9-4c29-b657-3a8bc85b55f2", id: "yu-fujioka", name: "yu-fujioka" },
+  { key: "4d7edfa7-9431-487b-a18a-d1da8c0c9f22", id: "yut0n", name: "yut0n" },
+  { key: "085ba551-fce1-4fcd-aec6-1e45db492f37", id: "ubugeeei", name: "ubugeeei" },
+  { key: "7242d625-28b0-4d49-9949-6812410df237", id: "ubugeeei", name: "ubugeeei" },
+  { key: "b0835fed-f025-44ab-a221-864883f7974b", id: "yamanoku", name: "yamanoku" },
+  { key: "a6a2084d-1a19-4bdd-adab-31f40ae21fb9", id: "blue32a", name: "blue32a" },
+  { key: "c87e9712-1b20-4946-a71e-ce8d9a90e18b", id: "ykatombn", name: "ykatombn" },
+  { key: "a300f054-8d86-447f-9dd6-f430d0e29c57", id: "ykatombn", name: "ykatombn" },
+  { key: "652f64e2-868f-4f19-984b-b707ab8f6aee", id: "kikumoto", name: "kikumoto" },
+  { key: "e2f5d93d-d71b-4cfe-a7c8-98fa5bd138a2", id: "kikumoto", name: "kikumoto" },
+  { key: "94dc9c2d-2f7d-4092-aef8-cd486eaece3e", id: "soudai1025", name: "soudai1025" },
+  { key: "23c0d6b0-f8de-4473-be25-f08dcde87967", id: "satak", name: "satak" },
+  { key: "611cbaad-7002-4be3-af1a-d9678de8eb01", id: "natye16", name: "natye16" },
+  { key: "5c5c23ca-0dfb-451f-8759-176924a9d9c9", id: "natye16", name: "natye16" },
+  { key: "27ba9f76-8391-4a5c-ad83-e83a06bacc08", id: "hmatsu47", name: "hmatsu47" },
+  { key: "3f214caf-fae6-45fb-b02b-4958aae6da14", id: "hmatsu47", name: "hmatsu47" },
+  { key: "41afe6b3-a27d-4457-b922-dcfea7ff51a9", id: "Natsuki", name: "Natsuki" },
+  { key: "f33fff07-caf2-40b9-81a5-973f3bcb600a", id: "ttskch", name: "ttskch" },
+  { key: "8292aa48-d7da-445f-9efe-ab586f480b89", id: "jsakamoto", name: "jsakamoto" },
 ];
