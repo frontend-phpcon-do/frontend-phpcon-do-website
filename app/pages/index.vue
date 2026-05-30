@@ -26,6 +26,8 @@ useSeoMeta({
 
     <SponsorsSection />
 
+    <IndividualSponsorsSection />
+
     <StaffSection />
   </div>
 </template>
