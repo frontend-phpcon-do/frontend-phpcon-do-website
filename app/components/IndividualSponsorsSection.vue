@@ -16,19 +16,26 @@ const avatarSrc = (id: string) => `/individual-sponsors/${id}.png`;
         :key="sponsor.key"
         class="individual-sponsors__item"
       >
-        <div class="individual-sponsors__avatar">
-          <img
-            v-if="!hasAvatarError[sponsor.id]"
-            :src="avatarSrc(sponsor.id)"
-            :alt="sponsor.name"
-            loading="lazy"
-            @error="hasAvatarError[sponsor.id] = true"
-          />
-          <span v-else class="individual-sponsors__avatar-fallback" aria-hidden="true">
-            {{ sponsor.name.charAt(0) }}
-          </span>
-        </div>
-        <span class="individual-sponsors__name">{{ sponsor.name }}</span>
+        <a
+          :href="`https://fortee.jp/u/${sponsor.id}`"
+          target="_blank"
+          rel="noopener"
+          class="individual-sponsors__link"
+        >
+          <div class="individual-sponsors__avatar">
+            <img
+              v-if="!hasAvatarError[sponsor.id]"
+              :src="avatarSrc(sponsor.id)"
+              :alt="sponsor.name"
+              loading="lazy"
+              @error="hasAvatarError[sponsor.id] = true"
+            />
+            <span v-else class="individual-sponsors__avatar-fallback" aria-hidden="true">
+              {{ sponsor.name.charAt(0) }}
+            </span>
+          </div>
+          <span class="individual-sponsors__name">{{ sponsor.name }}</span>
+        </a>
       </li>
     </ul>
   </SectionContainer>
@@ -57,6 +64,24 @@ const avatarSrc = (id: string) => `/individual-sponsors/${id}.png`;
   align-items: center;
   gap: 8px;
   text-align: center;
+}
+
+.individual-sponsors__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.individual-sponsors__link:hover .individual-sponsors__avatar {
+  border-color: var(--color-line);
+  box-shadow: 2px 2px 0 0 var(--color-line);
+}
+
+.individual-sponsors__link:hover .individual-sponsors__name {
+  text-decoration: underline;
 }
 
 .individual-sponsors__avatar {
