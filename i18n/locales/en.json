@@ -56,6 +56,10 @@
     "caption": "// COMING SOON",
     "note": "Sponsor program is being prepared. This board will be updated as soon as we have details."
   },
+  "individualSponsors": {
+    "heading": "Individual Sponsors",
+    "description": "We'd like to thank all of our individual sponsors for their generous support of Frontend PHP Conference Hokkaido 2026."
+  },
   "staff": {
     "heading": "Staff",
     "description": "This conference is organized and run by a team of volunteer staff.",
