@@ -46,8 +46,8 @@ importers:
         specifier: 7.6.0
         version: 7.6.0(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(magicast@0.5.2)(vue@3.5.35(typescript@5.9.3))(zod@3.25.76)
       '@vizejs/nuxt':
-        specifier: ^0.138.0
-        version: 0.138.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(axe-core@4.11.1)(magicast@0.5.2)(nuxt@4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@parcel/watcher@2.5.6)(@types/node@25.6.0)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(@vue/compiler-sfc@3.5.30)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(esbuild@0.27.4)(eslint@10.2.1(jiti@2.6.1))(ioredis@5.10.0)(magicast@0.5.2)(optionator@0.9.4)(oxlint@1.60.0(oxlint-tsgolint@0.21.1))(rolldown@1.0.0-rc.17)(rollup-plugin-visualizer@6.0.11(rolldown@1.0.0-rc.17)(rollup@4.59.0))(rollup@4.59.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3)))(vue@3.5.35(typescript@5.9.3))
+        specifier: ^0.153.0
+        version: 0.153.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(axe-core@4.11.1)(magicast@0.5.2)(nuxt@4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@parcel/watcher@2.5.6)(@types/node@25.6.0)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(@vue/compiler-sfc@3.5.30)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(esbuild@0.27.4)(eslint@10.2.1(jiti@2.6.1))(ioredis@5.10.0)(magicast@0.5.2)(optionator@0.9.4)(oxlint@1.60.0(oxlint-tsgolint@0.21.1))(rolldown@1.0.0-rc.17)(rollup-plugin-visualizer@6.0.11(rolldown@1.0.0-rc.17)(rollup@4.59.0))(rollup@4.59.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3)))(vue@3.5.35(typescript@5.9.3))
       better-sqlite3:
         specifier: ^12.6.2
         version: 12.6.2
@@ -60,9 +60,6 @@ importers:
       vite:
         specifier: npm:@voidzero-dev/vite-plus-core@^0.1.22
         version: '@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)'
-      vize:
-        specifier: ^0.138.0
-        version: 0.138.0(@pkl-community/pkl@0.27.2)
       vue:
         specifier: ^3.5.35
         version: 3.5.35(typescript@5.9.3)
@@ -3036,82 +3033,82 @@ packages:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.2.25
 
-  '@vizejs/musea-nuxt@0.138.0':
-    resolution: {integrity: sha512-R6wx7sk4EFSuq/zOpES8nxrAon0E1/VW5L302qFwpkgopJ0hIJleYWIf7x8qoFenSTBZsNrPvVaCbhApJmv6cQ==}
+  '@vizejs/musea-nuxt@0.153.0':
+    resolution: {integrity: sha512-jnqm4ULDZyWoNujrbn5BTpyi3ZYDRi5HqM1rRXbS1tZaNYz/S19rx7ZJSIVxoscJFiRb+ViynufJISRaqpip4Q==}
     engines: {node: '>=22'}
     peerDependencies:
       vite: ^8.0.0
       vue: ^3.5.0
       vue-router: ^4.5.0
 
-  '@vizejs/native-darwin-arm64@0.138.0':
-    resolution: {integrity: sha512-0AZde93Bbyu1dikIO8Vpdlmkhd0V/1RPiGyozNpneps3/2aH++5mteuP/jSE1Jq95AYO3UZyTkWXH4QZAIFF7Q==}
+  '@vizejs/native-darwin-arm64@0.153.0':
+    resolution: {integrity: sha512-p/5V1VMW3YfIaZf99TjIA/Sxo4wy5pDU/wG5hy8cpH9fuLIbDaO1ksLiq3u4kaYtS01xB3bZn2UvX6NnrdGXpA==}
     engines: {node: '>=22'}
     cpu: [arm64]
     os: [darwin]
 
-  '@vizejs/native-darwin-x64@0.138.0':
-    resolution: {integrity: sha512-W+VXeioJHIINccPvCkKdHngTTCAWM8oN40al7lPx7qwDM0hgKFKtAnWHoWrIk7Gj0Q919l9YV26UmFvCYwoxgQ==}
+  '@vizejs/native-darwin-x64@0.153.0':
+    resolution: {integrity: sha512-gZq8t4EPicpJjxT966M1VKPIa9J59UmDDmBIAcUXCbe2/8Bl5qLx1u3q7osi507ODC0DffQHt2uoVdn52V8jeg==}
     engines: {node: '>=22'}
     cpu: [x64]
     os: [darwin]
 
-  '@vizejs/native-linux-arm64-gnu@0.138.0':
-    resolution: {integrity: sha512-L4lxKAEZ2oye1djWJocoVs3OVWm9ivtjvSjZsN6r26FI3Qubd1HMuuhWLhF1BuvuSPoVyiZjAHZbAngfJA2glw==}
+  '@vizejs/native-linux-arm64-gnu@0.153.0':
+    resolution: {integrity: sha512-IoOYRhqZNvqM1bQ0cnNpiWmC/AmfHss9wSQfHCLPRce7naJu//KKE15whveLyXLM+cnityb1MCsvyKCpp8ZuUg==}
     engines: {node: '>=22'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@vizejs/native-linux-arm64-musl@0.138.0':
-    resolution: {integrity: sha512-fdSVuqmTHNjkEbsiLcyZ1EIYPI5JF6rAl6SI+1Wo3LCFfJDKS2L9lWE6FXv/KWfsZ94vlzyYfsduEs7AXYuGVg==}
+  '@vizejs/native-linux-arm64-musl@0.153.0':
+    resolution: {integrity: sha512-wJeNXxfMQZzvVPWLMCwqCStTZo928UeuWnQxWjSeWG31bVdNUamRTJsReAVh4z+WJSHii8PGc1BV3cBDTFvFIQ==}
     engines: {node: '>=22'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@vizejs/native-linux-x64-gnu@0.138.0':
-    resolution: {integrity: sha512-zjqO107PEh4+sgHeA9d1LQu4NCpGbceU7h/z91Y86ZHRMG3MJzWk6IqN5koCueu4ZUUek3EwiPg5U/9+8WohRg==}
+  '@vizejs/native-linux-x64-gnu@0.153.0':
+    resolution: {integrity: sha512-tSJuV/2Yy4FOVuMCh2xVkfeyOrq890p5RIsVBCruATZj7/EzGbNijEo72vNsnlUxMnl2jT3ar36I38ZcZHLusA==}
     engines: {node: '>=22'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@vizejs/native-linux-x64-musl@0.138.0':
-    resolution: {integrity: sha512-+kNH4q1Ca9NMzRa3HwUtrz1J8KMYatgvqbIr5YdIxFdnHtbxymLLYZUMt7hcqIqq1ff+7OEBuzFH/gr7vWV7kw==}
+  '@vizejs/native-linux-x64-musl@0.153.0':
+    resolution: {integrity: sha512-Qycw+tOHlHjBqsH5s+tosthcd1JIBUy9Om0WQM/2frh5J0+ixqc5qvFUdQ2U0z3uAXsAWiGyU8hCGJ6L13S9Sw==}
     engines: {node: '>=22'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@vizejs/native-win32-arm64-msvc@0.138.0':
-    resolution: {integrity: sha512-E03vpsdvX6S6YSmpCYpiJZpl6/f3ugOaNurSCecT26/tmJAH+R7+kp0SxTYIxzDKkQp4rV85ohgbd7LLxLWuKg==}
+  '@vizejs/native-win32-arm64-msvc@0.153.0':
+    resolution: {integrity: sha512-pQTmt+sU/hADYlLv74lRfmPurn8tNfT9ofK7RWDaNnq72b7u+3Mc3FRo3KQNrlUsOu48jUEBLi2ZLwoJ2CLmmA==}
     engines: {node: '>=22'}
     cpu: [arm64]
     os: [win32]
 
-  '@vizejs/native-win32-x64-msvc@0.138.0':
-    resolution: {integrity: sha512-Vr3ei2CNGXIeKYBwHczp4BgX8c1UUCM0L3OVjm+E5P+68TxQkHn7OE9R5xS+kqGTS9d/em+DdSFtUX9VPSo9VA==}
+  '@vizejs/native-win32-x64-msvc@0.153.0':
+    resolution: {integrity: sha512-D3++TNVyLp8Fhgt2w4qlaWZJ8ezAnHDqFnRnTAzY3H+B/F9gpbG28HIQR96Hjfbf+zePCO1kPYiyqjhSsk1ZOQ==}
     engines: {node: '>=22'}
     cpu: [x64]
     os: [win32]
 
-  '@vizejs/native@0.138.0':
-    resolution: {integrity: sha512-xXHwSchp2aml4NAkpdEuu4fQm29cM8emiTyBOKc/9fz2G7qSM3DJdKWszUaDs/8ued/oekC8iYg22aFdJLBQLA==}
+  '@vizejs/native@0.153.0':
+    resolution: {integrity: sha512-/qsgGPY7lp7xFExpecgQ29vZLb7C7HAI662q0b0/9g4ngnjOSa1ve69CSPZtG5SK0vKWgoxw78t2Ub+PKpUn3A==}
     engines: {node: '>=22'}
 
-  '@vizejs/nuxt@0.138.0':
-    resolution: {integrity: sha512-VjWdnzJgrwCtSTNLV7R/JOJNxOZcsN6ynTwK5tX60oO0qGYBe9hbmKj+fNXne9c8C1zqs/ab/LYGRRo5Fb/hmQ==}
+  '@vizejs/nuxt@0.153.0':
+    resolution: {integrity: sha512-M8PYbc82K3EkgVqvAngGwL1Y1orCL322nwCFjadXCEElBKZOkMfTe1Vm865H4AaQ3qtYi+Uxlwtsqst31AG0GQ==}
     engines: {node: '>=22'}
     peerDependencies:
       nuxt: ^2.16.0 || ^3.0.0 || ^4.0.0
 
-  '@vizejs/vite-plugin-musea@0.138.0':
-    resolution: {integrity: sha512-X6OdBYX4kndubg3SMPtcKHPbIpvjtVOAnEHUmKSdO9HoCDK7Xef/iCwaurlefBmLnBlunkKtp7BU94cIIt28QQ==}
+  '@vizejs/vite-plugin-musea@0.153.0':
+    resolution: {integrity: sha512-xyyXAn7eZPQGjomRbbGn1S99p3OrO+ZyQmUOMvNRVniG9H6JTznI6uPIzH6uFmVLpTvTmBvSvdzHrO9nDExTFQ==}
     engines: {node: '>=22'}
     hasBin: true
     peerDependencies:
-      '@vizejs/vite-plugin': 0.138.0
+      '@vizejs/vite-plugin': 0.153.0
       axe-core: ^4.7.0
       playwright: ^1.40.0
       vite: ^8.0.0
@@ -3121,8 +3118,8 @@ packages:
       playwright:
         optional: true
 
-  '@vizejs/vite-plugin@0.138.0':
-    resolution: {integrity: sha512-tMOet9TcoklwHUCUhRSMyfgY+cpaczOJqQaet2Io/ejkdnL9IdohV89bOlGnyaKjrO8BqxDzCAka/8bmTylpUQ==}
+  '@vizejs/vite-plugin@0.153.0':
+    resolution: {integrity: sha512-ImaHGGMqH/F7g2eEzsnWdiSpIVEgMeQZuIW3+XrVhHEDSN2z/2CzyvJOSqELVFDuTM02qbtGl8UHqnvhE3rCtg==}
     engines: {node: '>=22'}
     peerDependencies:
       vite: ^8.0.0
@@ -6568,8 +6565,8 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-  vize@0.138.0:
-    resolution: {integrity: sha512-k14xoBwToi+WJMKJZxYhTpDGq5mHhDBo4Uk1fHEYPK5CozGFieHKFo5uK6Z/V+wIhn09N0mK+u4xAIjYFP94cQ==}
+  vize@0.153.0:
+    resolution: {integrity: sha512-cpiXnDuvY/89X489dKGYFXEbCX6yxR0sJndcpmcNhyAmKTTIfWQ9EcKFetexDSrxeY0Ey4/NyvCKrEoMMiZCbw==}
     engines: {node: '>=22'}
     hasBin: true
     peerDependencies:
@@ -6966,7 +6963,7 @@ snapshots:
   '@babel/template@7.28.6':
     dependencies:
       '@babel/code-frame': 7.29.0
-      '@babel/parser': 7.29.0
+      '@babel/parser': 7.29.7
       '@babel/types': 7.29.0
 
   '@babel/traverse@7.29.0':
@@ -6974,7 +6971,7 @@ snapshots:
       '@babel/code-frame': 7.29.0
       '@babel/generator': 7.29.1
       '@babel/helper-globals': 7.28.0
-      '@babel/parser': 7.29.0
+      '@babel/parser': 7.29.7
       '@babel/template': 7.28.6
       '@babel/types': 7.29.0
       debug: 4.4.3
@@ -7936,7 +7933,7 @@ snapshots:
       '@nuxt/devalue': 2.0.2
       '@nuxt/kit': 4.4.2(magicast@0.5.2)
       '@unhead/vue': 2.1.12(vue@3.5.35(typescript@5.9.3))
-      '@vue/shared': 3.5.30
+      '@vue/shared': 3.5.35
       consola: 3.4.2
       defu: 6.1.4
       destr: 2.0.5
@@ -8001,7 +7998,7 @@ snapshots:
 
   '@nuxt/schema@4.4.2':
     dependencies:
-      '@vue/shared': 3.5.30
+      '@vue/shared': 3.5.35
       defu: 6.1.4
       pathe: 2.0.3
       pkg-types: 2.3.0
@@ -8208,7 +8205,7 @@ snapshots:
       '@shikijs/transformers': 3.23.0
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
-      '@vue/compiler-core': 3.5.30
+      '@vue/compiler-core': 3.5.35
       consola: 3.4.2
       debug: 4.4.3
       defu: 6.1.4
@@ -9387,55 +9384,55 @@ snapshots:
       vite: '@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)'
       vue: 3.5.35(typescript@5.9.3)
 
-  '@vizejs/musea-nuxt@0.138.0(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3)))(vue@3.5.35(typescript@5.9.3))':
+  '@vizejs/musea-nuxt@0.153.0(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3)))(vue@3.5.35(typescript@5.9.3))':
     dependencies:
       vite: '@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)'
       vue: 3.5.35(typescript@5.9.3)
       vue-router: 5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3))
 
-  '@vizejs/native-darwin-arm64@0.138.0':
+  '@vizejs/native-darwin-arm64@0.153.0':
     optional: true
 
-  '@vizejs/native-darwin-x64@0.138.0':
+  '@vizejs/native-darwin-x64@0.153.0':
     optional: true
 
-  '@vizejs/native-linux-arm64-gnu@0.138.0':
+  '@vizejs/native-linux-arm64-gnu@0.153.0':
     optional: true
 
-  '@vizejs/native-linux-arm64-musl@0.138.0':
+  '@vizejs/native-linux-arm64-musl@0.153.0':
     optional: true
 
-  '@vizejs/native-linux-x64-gnu@0.138.0':
+  '@vizejs/native-linux-x64-gnu@0.153.0':
     optional: true
 
-  '@vizejs/native-linux-x64-musl@0.138.0':
+  '@vizejs/native-linux-x64-musl@0.153.0':
     optional: true
 
-  '@vizejs/native-win32-arm64-msvc@0.138.0':
+  '@vizejs/native-win32-arm64-msvc@0.153.0':
     optional: true
 
-  '@vizejs/native-win32-x64-msvc@0.138.0':
+  '@vizejs/native-win32-x64-msvc@0.153.0':
     optional: true
 
-  '@vizejs/native@0.138.0':
+  '@vizejs/native@0.153.0':
     optionalDependencies:
-      '@vizejs/native-darwin-arm64': 0.138.0
-      '@vizejs/native-darwin-x64': 0.138.0
-      '@vizejs/native-linux-arm64-gnu': 0.138.0
-      '@vizejs/native-linux-arm64-musl': 0.138.0
-      '@vizejs/native-linux-x64-gnu': 0.138.0
-      '@vizejs/native-linux-x64-musl': 0.138.0
-      '@vizejs/native-win32-arm64-msvc': 0.138.0
-      '@vizejs/native-win32-x64-msvc': 0.138.0
+      '@vizejs/native-darwin-arm64': 0.153.0
+      '@vizejs/native-darwin-x64': 0.153.0
+      '@vizejs/native-linux-arm64-gnu': 0.153.0
+      '@vizejs/native-linux-arm64-musl': 0.153.0
+      '@vizejs/native-linux-x64-gnu': 0.153.0
+      '@vizejs/native-linux-x64-musl': 0.153.0
+      '@vizejs/native-win32-arm64-msvc': 0.153.0
+      '@vizejs/native-win32-x64-msvc': 0.153.0
 
-  '@vizejs/nuxt@0.138.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(axe-core@4.11.1)(magicast@0.5.2)(nuxt@4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@parcel/watcher@2.5.6)(@types/node@25.6.0)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(@vue/compiler-sfc@3.5.30)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(esbuild@0.27.4)(eslint@10.2.1(jiti@2.6.1))(ioredis@5.10.0)(magicast@0.5.2)(optionator@0.9.4)(oxlint@1.60.0(oxlint-tsgolint@0.21.1))(rolldown@1.0.0-rc.17)(rollup-plugin-visualizer@6.0.11(rolldown@1.0.0-rc.17)(rollup@4.59.0))(rollup@4.59.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3)))(vue@3.5.35(typescript@5.9.3))':
+  '@vizejs/nuxt@0.153.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(axe-core@4.11.1)(magicast@0.5.2)(nuxt@4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@parcel/watcher@2.5.6)(@types/node@25.6.0)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(@vue/compiler-sfc@3.5.30)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(esbuild@0.27.4)(eslint@10.2.1(jiti@2.6.1))(ioredis@5.10.0)(magicast@0.5.2)(optionator@0.9.4)(oxlint@1.60.0(oxlint-tsgolint@0.21.1))(rolldown@1.0.0-rc.17)(rollup-plugin-visualizer@6.0.11(rolldown@1.0.0-rc.17)(rollup@4.59.0))(rollup@4.59.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3)))(vue@3.5.35(typescript@5.9.3))':
     dependencies:
       '@nuxt/kit': 4.4.6(magicast@0.5.2)
-      '@vizejs/musea-nuxt': 0.138.0(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3)))(vue@3.5.35(typescript@5.9.3))
-      '@vizejs/vite-plugin': 0.138.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))
-      '@vizejs/vite-plugin-musea': 0.138.0(@vizejs/vite-plugin@0.138.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)))(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(axe-core@4.11.1)
+      '@vizejs/musea-nuxt': 0.153.0(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(vue-router@5.0.3(@vue/compiler-sfc@3.5.30)(vue@3.5.35(typescript@5.9.3)))(vue@3.5.35(typescript@5.9.3))
+      '@vizejs/vite-plugin': 0.153.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))
+      '@vizejs/vite-plugin-musea': 0.153.0(@vizejs/vite-plugin@0.153.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)))(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(axe-core@4.11.1)
       nuxt: 4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@parcel/watcher@2.5.6)(@types/node@25.6.0)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(@vue/compiler-sfc@3.5.30)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(esbuild@0.27.4)(eslint@10.2.1(jiti@2.6.1))(ioredis@5.10.0)(magicast@0.5.2)(optionator@0.9.4)(oxlint@1.60.0(oxlint-tsgolint@0.21.1))(rolldown@1.0.0-rc.17)(rollup-plugin-visualizer@6.0.11(rolldown@1.0.0-rc.17)(rollup@4.59.0))(rollup@4.59.0)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)
-      vize: 0.138.0(@pkl-community/pkl@0.27.2)
+      vize: 0.153.0(@pkl-community/pkl@0.27.2)
     transitivePeerDependencies:
       - '@pkl-community/pkl'
       - axe-core
@@ -9445,21 +9442,21 @@ snapshots:
       - vue
       - vue-router
 
-  '@vizejs/vite-plugin-musea@0.138.0(@vizejs/vite-plugin@0.138.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)))(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(axe-core@4.11.1)':
+  '@vizejs/vite-plugin-musea@0.153.0(@vizejs/vite-plugin@0.153.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)))(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))(axe-core@4.11.1)':
     dependencies:
-      '@vizejs/native': 0.138.0
-      '@vizejs/vite-plugin': 0.138.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))
+      '@vizejs/native': 0.153.0
+      '@vizejs/vite-plugin': 0.153.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))
       pngjs: 7.0.0
       vite: '@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)'
     optionalDependencies:
       axe-core: 4.11.1
 
-  '@vizejs/vite-plugin@0.138.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))':
+  '@vizejs/vite-plugin@0.153.0(@pkl-community/pkl@0.27.2)(@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2))':
     dependencies:
-      '@vizejs/native': 0.138.0
+      '@vizejs/native': 0.153.0
       tinyglobby: 0.2.16
       vite: '@voidzero-dev/vite-plus-core@0.1.22(@types/node@25.6.0)(esbuild@0.27.4)(jiti@2.6.1)(terser@5.46.0)(typescript@5.9.3)(yaml@2.8.2)'
-      vize: 0.138.0(@pkl-community/pkl@0.27.2)
+      vize: 0.153.0(@pkl-community/pkl@0.27.2)
     transitivePeerDependencies:
       - '@pkl-community/pkl'
 
@@ -9570,7 +9567,7 @@ snapshots:
 
   '@vue-macros/common@3.1.2(vue@3.5.35(typescript@5.9.3))':
     dependencies:
-      '@vue/compiler-sfc': 3.5.30
+      '@vue/compiler-sfc': 3.5.35
       ast-kit: 2.2.0
       local-pkg: 1.1.2
       magic-string-ast: 1.0.3
@@ -9590,7 +9587,7 @@ snapshots:
       '@babel/types': 7.29.0
       '@vue/babel-helper-vue-transform-on': 2.0.1
       '@vue/babel-plugin-resolve-type': 2.0.1(@babel/core@7.29.0)
-      '@vue/shared': 3.5.30
+      '@vue/shared': 3.5.35
     optionalDependencies:
       '@babel/core': 7.29.0
     transitivePeerDependencies:
@@ -9602,8 +9599,8 @@ snapshots:
       '@babel/core': 7.29.0
       '@babel/helper-module-imports': 7.28.6
       '@babel/helper-plugin-utils': 7.28.6
-      '@babel/parser': 7.29.0
-      '@vue/compiler-sfc': 3.5.30
+      '@babel/parser': 7.29.7
+      '@vue/compiler-sfc': 3.5.35
     transitivePeerDependencies:
       - supports-color
 
@@ -9691,8 +9688,8 @@ snapshots:
   '@vue/language-core@3.2.5':
     dependencies:
       '@volar/language-core': 2.4.28
-      '@vue/compiler-dom': 3.5.30
-      '@vue/shared': 3.5.30
+      '@vue/compiler-dom': 3.5.35
+      '@vue/shared': 3.5.35
       alien-signals: 3.1.2
       muggle-string: 0.4.1
       path-browserify: 1.0.1
@@ -9820,7 +9817,7 @@ snapshots:
 
   ast-kit@2.2.0:
     dependencies:
-      '@babel/parser': 7.29.0
+      '@babel/parser': 7.29.7
       pathe: 2.0.3
 
   ast-walker-scope@0.8.3:
@@ -13807,9 +13804,9 @@ snapshots:
       - vite
       - yaml
 
-  vize@0.138.0(@pkl-community/pkl@0.27.2):
+  vize@0.153.0(@pkl-community/pkl@0.27.2):
     dependencies:
-      '@vizejs/native': 0.138.0
+      '@vizejs/native': 0.153.0
       oxc-transform: 0.130.0
     optionalDependencies:
       '@pkl-community/pkl': 0.27.2
