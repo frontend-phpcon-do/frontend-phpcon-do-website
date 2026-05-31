@@ -54,6 +54,7 @@ const logoSrc = computed(() => `/sponsors/${props.sponsor.id}/logo.png`);
     border-color 0.18s ease,
     box-shadow 0.18s ease;
   height: 100%;
+  width: 100%;
 }
 
 a.sponsor:hover {
