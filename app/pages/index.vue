@@ -29,6 +29,8 @@ useSeoMeta({
     <IndividualSponsorsSection />
 
     <StaffSection />
+
+    <ConferencesSection />
   </div>
 </template>
 

@@ -77,5 +77,13 @@
     "description": "We are preparing a job board to feature openings from our sponsor companies; it will also be displayed at the venue.",
     "caption": "// HIRING",
     "note": "Details for sponsors interested in posting openings will be announced soon."
+  },
+  "conferences": {
+    "heading": "Related Conferences",
+    "description": "Discover frontend and PHP conferences held across Japan.",
+    "frontend": "Frontend",
+    "php": "PHP",
+    "upcoming": "Upcoming",
+    "past": "Past"
   }
 }
