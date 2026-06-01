@@ -24,7 +24,8 @@
     "privacy": "プライバシーポリシー"
   },
   "footer": {
-    "copyright": "© 2026 Frontend PHP Conference Hokkaido"
+    "copyright": "© 2026 Frontend PHP Conference Hokkaido",
+    "poweredBy": "Powered by"
   },
   "overview": {
     "heading": "開催概要",

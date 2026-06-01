@@ -77,7 +77,10 @@ const homeHashTo = (hash: string) => ({ path: localePath("/"), hash });
 
       <div class="site-footer__bottom">
         <p class="site-footer__copyright">{{ $t("footer.copyright") }}</p>
-        <p class="site-footer__build" aria-hidden="true">build.0001 // sapporo</p>
+        <p class="site-footer__powered">
+          {{ $t("footer.poweredBy") }}
+          <a href="https://vizejs.dev/" target="_blank" rel="noopener">Vize</a>
+        </p>
       </div>
     </div>
   </footer>
@@ -239,13 +242,22 @@ const homeHashTo = (hash: string) => ({ path: localePath("/"), hash });
   color: var(--color-mute);
 }
 
-.site-footer__build {
+.site-footer__powered {
   margin: 0;
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--color-mute);
-  opacity: 0.7;
+}
+
+.site-footer__powered a {
+  color: var(--color-ink);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.site-footer__powered a:hover {
+  color: var(--theme-blue);
 }
 </style>
