@@ -43,5 +43,6 @@ export const individualSponsors: IndividualSponsor[] = [
   { key: "3f214caf-fae6-45fb-b02b-4958aae6da14", id: "hmatsu47", name: "hmatsu47" },
   { key: "41afe6b3-a27d-4457-b922-dcfea7ff51a9", id: "Natsuki", name: "Natsuki" },
   { key: "f33fff07-caf2-40b9-81a5-973f3bcb600a", id: "ttskch", name: "ttskch" },
-  { key: "8292aa48-d7da-445f-9efe-ab586f480b89", id: "jsakamoto", name: "jsakamoto" },
+  { key: "8292aa48-d7da-445f-9efe-ab586f480b89", id: "anonymous", name: "匿名" },
+  { key: "e1f76104-452f-476f-b57f-0043ab00fffa", id: "tsuku", name: "tsuku" },
 ];
