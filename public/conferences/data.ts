@@ -32,3 +32,62 @@ export const frontendConferenceData = [
     venue: "コングレスクエア グラングリーン大阪",
   },
 ] as const;
+
+export const phpConferenceData = [
+  {
+    name: "PHPerKaigi 2026",
+    nameEn: "PHPerKaigi 2026",
+    data: "2026-03-20",
+    id: "phperkaigi-2026",
+    url: "https://phperkaigi.jp/2026/",
+    venue: "中野セントラルパークカンファレンス",
+  },
+  {
+    name: "PHPカンファレンス小田原2026",
+    nameEn: "PHP Conference Odawara 2026",
+    data: "2026-04-11",
+    id: "phpcon-odawara-2026",
+    url: "https://phpcon-odawara.jp/2026/",
+    venue: "おだわら市民交流センター UMECO",
+  },
+  {
+    name: "PHPカンファレンス香川2026",
+    nameEn: "PHP Conference Kagawa 2026",
+    data: "2026-05-09",
+    id: "phpcon-kagawa-2026",
+    url: "https://phpcon.kagawa.jp/2026/",
+    venue: "玉藻公園内 披雲閣",
+  },
+  {
+    name: "Laravel Live Japan",
+    nameEn: "Laravel Live Japan",
+    data: "2026-05-26",
+    id: "laravel-live-japan-2026",
+    url: "https://laravellive.jp/ja",
+    venue: "立川ステージガーデン",
+  },
+  {
+    name: "PHPカンファレンス2026",
+    nameEn: "PHP Conference 2026",
+    data: "2026-07-20",
+    id: "phpcon-2026",
+    url: "https://phpcon.php.gr.jp/2026/",
+    venue: "大田区産業プラザPiO",
+  },
+  {
+    name: "PHPカンファレンス愛媛2026",
+    nameEn: "PHP Conference Ehime 2026",
+    data: "2026-10-03",
+    id: "phpcon-ehime-2026",
+    url: "https://phpcon.ehime.jp/",
+    venue: "愛媛大学 城北キャンパス",
+  },
+  {
+    name: "PHPカンファレンス新潟2026",
+    nameEn: "PHP Conference Niigata 2026",
+    data: "2026-11-14",
+    id: "phpcon-niigata-2026",
+    url: "https://phpcon.niigata.jp/",
+    venue: "朱鷺メッセ",
+  },
+] as const;

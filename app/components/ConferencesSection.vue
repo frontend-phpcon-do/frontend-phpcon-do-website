@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { frontendConferenceData } from "../../public/conferences/data";
-// PHP conferences will be added here once available:
-// import { phpConferenceData } from "../../public/conferences/data";
+import { frontendConferenceData, phpConferenceData } from "../../public/conferences/data";
 import {
   formatConferenceDate,
   splitConferencesByDate,
@@ -18,7 +16,7 @@ type Category = {
 
 const categories: Category[] = [
   { key: "frontend", labelKey: "conferences.frontend", conferences: frontendConferenceData },
-  // { key: "php", labelKey: "conferences.php", conferences: phpConferenceData },
+  { key: "php", labelKey: "conferences.php", conferences: phpConferenceData },
 ];
 
 const now = new Date();
