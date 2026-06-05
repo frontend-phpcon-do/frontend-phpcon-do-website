@@ -8,7 +8,6 @@ const navItems = [
   { hash: "#access", key: "nav.access" },
   { hash: "#sponsors", key: "nav.sponsors" },
   { hash: "#staff", key: "nav.staff" },
-  { hash: "#timetable", key: "nav.timetable" },
 ] as const;
 
 const homeHashTo = (hash: string) => ({ path: localePath("/"), hash });
@@ -43,6 +42,11 @@ const homeHashTo = (hash: string) => ({ path: localePath("/"), hash });
           <ul>
             <li v-for="item in navItems" :key="item.key">
               <NuxtLink :to="homeHashTo(item.hash)">{{ $t(item.key) }}</NuxtLink>
+            </li>
+            <li>
+              <a :href="SITE_LINKS.timetable" target="_blank" rel="noopener">
+                {{ $t("nav.timetable") }}
+              </a>
             </li>
             <li>
               <NuxtLink :to="localePath('/job-board')">{{ $t("nav.jobBoard") }}</NuxtLink>
