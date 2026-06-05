@@ -8,14 +8,15 @@ const isOpen = ref(false);
 
 type NavItem =
   | { kind: "anchor"; hash: string; key: string }
-  | { kind: "page"; to: string; key: string };
+  | { kind: "page"; to: string; key: string }
+  | { kind: "external"; href: string; key: string };
 
 const navItems: readonly NavItem[] = [
   { kind: "anchor", hash: "#overview", key: "nav.overview" },
   { kind: "anchor", hash: "#access", key: "nav.access" },
   { kind: "anchor", hash: "#sponsors", key: "nav.sponsors" },
   { kind: "anchor", hash: "#staff", key: "nav.staff" },
-  { kind: "page", to: "/timetable", key: "nav.timetable" },
+  { kind: "external", href: SITE_LINKS.timetable, key: "nav.timetable" },
   { kind: "page", to: "/job-board", key: "nav.jobBoard" },
 ] as const;
 
@@ -45,6 +46,15 @@ function close() {
             >
               {{ $t(item.key) }}
             </NuxtLink>
+            <a
+              v-else-if="item.kind === 'external'"
+              :href="item.href"
+              class="site-header__nav-link"
+              target="_blank"
+              rel="noopener"
+            >
+              {{ $t(item.key) }}
+            </a>
             <NuxtLink v-else :to="homeHashTo(item.hash)" class="site-header__nav-link">
               {{ $t(item.key) }}
             </NuxtLink>
@@ -113,6 +123,17 @@ function close() {
               <span>{{ $t(item.key) }}</span>
               <span class="site-header__drawer-arrow" aria-hidden="true">→</span>
             </NuxtLink>
+            <a
+              v-else-if="item.kind === 'external'"
+              :href="item.href"
+              class="site-header__drawer-link"
+              target="_blank"
+              rel="noopener"
+              @click="close"
+            >
+              <span>{{ $t(item.key) }}</span>
+              <span class="site-header__drawer-arrow" aria-hidden="true">→</span>
+            </a>
             <NuxtLink
               v-else
               :to="homeHashTo(item.hash)"
