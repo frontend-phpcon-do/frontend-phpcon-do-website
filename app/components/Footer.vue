@@ -63,6 +63,11 @@ const homeHashTo = (hash: string) => ({ path: localePath("/"), hash });
                 {{ $t("legal.privacy") }}
               </a>
             </li>
+            <li>
+              <a :href="SITE_LINKS.troubleReport" target="_blank" rel="noopener">
+                {{ $t("legal.trouble") }}
+              </a>
+            </li>
           </ul>
         </nav>
 

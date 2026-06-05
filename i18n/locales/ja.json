@@ -21,7 +21,8 @@
   },
   "legal": {
     "coc": "行動規範",
-    "privacy": "プライバシーポリシー"
+    "privacy": "プライバシーポリシー",
+    "trouble": "お困りごと・連絡フォーム"
   },
   "footer": {
     "copyright": "© 2026 Frontend PHP Conference Hokkaido",
